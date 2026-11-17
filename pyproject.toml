@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "brain-gf"
+version = "0.1.0"
+description = "Gradient-free random-feature adaptive filter: frozen operator bank + concat readout + NLMS"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+plots = ["matplotlib>=3.6"]
+
+[tool.setuptools.packages.find]
+include = ["brain_gf*"]
